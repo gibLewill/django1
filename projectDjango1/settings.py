@@ -146,6 +146,7 @@ WSGI_APPLICATION = 'projectDjango1.wsgi.application'
 
 # parametres de connexion a la base de donnes
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -156,7 +157,11 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
+if os.environ.get('DATABASE_URL'):
+    DATABASES['default'] = dj_database_url.config(
+        conn_max_age=600, 
+        default=DATABASES['default']
+    )
 
 
 env = environ.Env()
