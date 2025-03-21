@@ -36,7 +36,7 @@ SECRET_KEY = SECRET_KEY
 # un booleen pour activer et desactiver le mode debogage
 
 DEBUG = True # pour visibilite des erreu en ligne
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = 'mysterious-bayou-18479-621a90e32825.herokuapp.com'
 
 
 # Application definition
