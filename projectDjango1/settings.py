@@ -35,8 +35,8 @@ SECRET_KEY = SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 # un booleen pour activer et desactiver le mode debogage
 
-DEBUG = True # pour visibilite des erreu en ligne
-ALLOWED_HOSTS = 'mysterious-bayou-18479-621a90e32825.herokuapp.com'
+DEBUG = False # pour visibilite des erreu en ligne
+ALLOWED_HOSTS = ['mysterious-bayou-18479-621a90e32825.herokuapp.com']
 
 
 # Application definition
